@@ -1,0 +1,19 @@
+<div class="wrp bg-deep-dark">
+  <div class="input-wrp">
+    <input
+      type="text"
+      placeholder="Add expense"
+      [(ngModel)]="newExpense"
+    >
+  </div>
+
+  <div class="button-wrp">
+    <button
+      class="bg-green"
+      (click)="handleAdd()"
+    >
+      <span class="stick vertical-stick"></span>
+      <span class="stick horizontal-stick"></span>
+    </button>
+  </div>
+</div>

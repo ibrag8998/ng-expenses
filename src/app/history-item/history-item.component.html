@@ -1,0 +1,24 @@
+<div class="wrp">
+  <div class="cost bg-green">
+    <input
+      type="number"
+      [value]="expense.price"
+      [(ngModel)]="expense.price"
+    >
+  </div>
+
+  <div class="title">
+    <input
+      type="text"
+      [value]="expense.title"
+      [(ngModel)]="expense.title"
+    >
+  </div>
+
+  <div class="delete">
+    <button
+      (click)="handleDelete()"
+      class="bg-green"
+    >X</button>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.wrp {
+  width: 100%;
+  height: 70px;
+  padding: 0 30px 0 20px;
+  display: inline-flex;
+
+  .input-wrp {
+    flex-grow: 1;
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(238, 238, 238, .35);
+    cursor: pointer;
+
+    .stick {
+      position: absolute;
+      background-color: #eeeeee;
+    }
+
+    .vertical-stick {
+      height: 23px;
+      width: 3px;
+      transform: translate(-1px, -11px);
+    }
+
+    .horizontal-stick {
+      height: 3px;
+      width: 23px;
+      transform: translate(-11px, -1px);
+    }
+  }
+}

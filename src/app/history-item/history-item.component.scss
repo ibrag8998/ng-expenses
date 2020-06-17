@@ -1,0 +1,75 @@
+.wrp {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(238, 238, 238, .15);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: .15s;
+
+  &:hover {
+    box-shadow:
+      0 0 0 3px rgba(78, 204, 163, .05),
+      0 0 0 8px rgba(78, 204, 163, .04),
+      0 0 0 13px rgba(78, 204, 163, .03);
+
+    .delete button {
+      right: 0;
+    }
+  }
+
+  .cost {
+    flex: 0 0 80px;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    input {
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-align: right;
+      -moz-appearance: textfield;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+
+  .title {
+    padding: 0 10px;
+    flex-grow: 1;
+
+  }
+
+  input {
+    background: transparent;
+    height: 100%;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .delete {
+    height: 100%;
+    width: 30px;
+
+    button {
+      width: 30px;
+      height: 100%;
+      border: none;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+      transition: .2s;
+      position: absolute;
+      right: -30px;
+    }
+  }
+}

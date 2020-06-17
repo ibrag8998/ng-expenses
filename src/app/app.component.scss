@@ -1,0 +1,10 @@
+main {
+  width: 411px;
+  height: 731px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  @media screen and (max-width: 751px) {
+    margin-top: 0;
+  }
+}
